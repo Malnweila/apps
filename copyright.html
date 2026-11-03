@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>جميع الحقوق محفوظة · كلمات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6EC;--card:#FFFFFF;--ink:#16213E;--soft:#535C7A;--line:#E6DECD;--link:#16213E;--gold:#FFB82E;--chip:#FFE2A6}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1128;--card:#18224A;--ink:#F3EEE3;--soft:#A9B1CC;--line:#2C3868;--link:#FFB82E;--chip:#4A3A12}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 -apple-system,"SF Arabic","Segoe UI",Tahoma,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+header{padding:28px 0 8px}
+header .wrap{display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.logo{flex:none;border-radius:13px;box-shadow:0 4px 14px rgba(22,33,62,.18)}
+.word{font-family:"Marhey",-apple-system,sans-serif;font-weight:700;font-size:34px;line-height:1}
+.lang{margin-inline-start:auto;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 15px -apple-system,sans-serif;border-radius:999px;padding:8px 16px;min-height:40px;cursor:pointer}
+main{flex:1;padding:16px 0 40px}
+h1{font-size:30px;line-height:1.3;margin:16px 0 4px}
+.muted{color:var(--soft);font-size:15px;margin:0 0 20px}
+.card{background:var(--card);border-radius:20px;padding:18px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(22,33,62,.06)}
+.card h2{font-size:19px;margin:0 0 6px}
+.card p{margin:0}
+.card p+p{margin-top:8px}
+a{color:var(--link);text-underline-offset:3px}
+.cta{display:inline-block;background:var(--gold);color:#16213E;font-weight:700;text-decoration:none;border-radius:999px;padding:10px 20px;margin-top:6px}
+.links{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.links a{display:flex;justify-content:space-between;align-items:center;background:var(--card);border-radius:18px;padding:16px 20px;text-decoration:none;color:var(--ink);font-weight:600;box-shadow:0 2px 10px rgba(22,33,62,.06)}
+.links a::after{content:"‹";color:var(--soft);font-size:22px}
+[dir=ltr] .links a::after{content:"›"}
+footer{border-top:1px solid var(--line);padding:22px 0 34px;color:var(--soft);font-size:15px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:8px}
+footer nav a{color:var(--ink);text-decoration:none;font-weight:600}
+footer nav a[aria-current]{color:var(--soft)}
+footer p{margin:0}
+footer a.copy{color:var(--soft);text-decoration:none}
+.js [lang=en].tx{display:none}
+.js.en [lang=ar].tx{display:none}
+.js.en [lang=en].tx{display:block}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="index.html"><img class="logo" src="logo.png" width="56" height="56" alt="شعار كلمات"><span class="word">كلماتٌ</span></a>
+<button class="lang" id="lang" type="button">English</button>
+</div></header>
+<main><div class="wrap">
+<div class="tx" lang="ar" dir="rtl">
+<h1>جميع الحقوق محفوظة</h1><p class="muted">© ٢٠٢٦ كلمات</p><section class="card"><h2>الحقوق</h2><p>تصميم لعبة كلمات ومراحلها وتعريفاتها من إعداد كلمات، وجميع الحقوق محفوظة.</p></section><section class="card"><h2>قائمة الكلمات</h2><p>مبنية جزئيًا على FrequencyWords من Hermit Dave، بترخيص <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>، مع تعريفات أصلية.</p></section><section class="card"><h2>خط العنوان</h2><p>Marhey، حقوق النشر 2022 The Marhey Project Authors، بترخيص <a href="https://openfontlicense.org">SIL Open Font License 1.1</a>.</p></section>
+</div>
+<div class="tx" lang="en" dir="ltr">
+<h1>All rights reserved</h1><p class="muted">© 2026 Kalimat</p><section class="card"><h2>Rights</h2><p>The Kalimat game design, levels and clues are by Kalimat. All rights reserved.</p></section><section class="card"><h2>Word list</h2><p>Partly based on FrequencyWords by Hermit Dave, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, with original definitions.</p></section><section class="card"><h2>Title font</h2><p>Marhey, Copyright 2022 The Marhey Project Authors, licensed under the <a href="https://openfontlicense.org">SIL Open Font License 1.1</a>.</p></section>
+</div>
+</div></main>
+<footer><div class="wrap">
+<div class="tx" lang="ar" dir="rtl"><nav><a href="index.html">الرئيسية</a><a href="support.html">الدعم</a><a href="privacy.html">سياسة الخصوصية</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p><a class="copy" href="copyright.html">© ٢٠٢٦ كلمات · جميع الحقوق محفوظة</a></p></div>
+<div class="tx" lang="en" dir="ltr"><nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p><a class="copy" href="copyright.html">© 2026 Kalimat · All rights reserved</a></p></div>
+</div></footer>
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');
+var en=/[?&]lang=en|#en/.test(location.href);
+function set(e){d.classList.toggle('en',e);d.setAttribute('dir',e?'ltr':'rtl');d.setAttribute('lang',e?'en':'ar');
+document.getElementById('lang').textContent=e?'العربية':'English';
+document.querySelectorAll('footer nav a, footer a.copy, .links a').forEach(function(a){var h=a.getAttribute('href');if(!h||h.indexOf('mailto')===0)return;h=h.split('?')[0];a.setAttribute('href',e?h+'?lang=en':h)});}
+document.getElementById('lang').onclick=function(){en=!en;set(en);history.replaceState(null,'',location.pathname+(en?'?lang=en':''));};
+set(en);})();
+</script>
+</body>
+</html>

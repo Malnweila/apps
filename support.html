@@ -39,6 +39,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:8px}
 footer nav a{color:var(--ink);text-decoration:none;font-weight:600}
 footer nav a[aria-current]{color:var(--soft)}
 footer p{margin:0}
+footer a.copy{color:var(--soft);text-decoration:none}
 .js [lang=en].tx{display:none}
 .js.en [lang=ar].tx{display:none}
 .js.en [lang=en].tx{display:block}
@@ -58,15 +59,15 @@ footer p{margin:0}
 </div>
 </div></main>
 <footer><div class="wrap">
-<div class="tx" lang="ar" dir="rtl"><nav><a href="index.html">الرئيسية</a><a href="support.html" aria-current="page">الدعم</a><a href="privacy.html">سياسة الخصوصية</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p>© ٢٠٢٦ كلمات · لعبة كلمات متقاطعة عربية</p></div>
-<div class="tx" lang="en" dir="ltr"><nav><a href="index.html">Home</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p>© 2026 Kalimat · An Arabic word game</p></div>
+<div class="tx" lang="ar" dir="rtl"><nav><a href="index.html">الرئيسية</a><a href="support.html" aria-current="page">الدعم</a><a href="privacy.html">سياسة الخصوصية</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p><a class="copy" href="copyright.html">© ٢٠٢٦ كلمات · جميع الحقوق محفوظة</a></p></div>
+<div class="tx" lang="en" dir="ltr"><nav><a href="index.html">Home</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:support@alnweila.com">support@alnweila.com</a></nav><p><a class="copy" href="copyright.html">© 2026 Kalimat · All rights reserved</a></p></div>
 </div></footer>
 <script>
 (function(){var d=document.documentElement;d.classList.add('js');
 var en=/[?&]lang=en|#en/.test(location.href);
 function set(e){d.classList.toggle('en',e);d.setAttribute('dir',e?'ltr':'rtl');d.setAttribute('lang',e?'en':'ar');
 document.getElementById('lang').textContent=e?'العربية':'English';
-document.querySelectorAll('footer nav a, .links a').forEach(function(a){var h=a.getAttribute('href');if(!h||h.indexOf('mailto')===0)return;h=h.split('?')[0];a.setAttribute('href',e?h+'?lang=en':h)});}
+document.querySelectorAll('footer nav a, footer a.copy, .links a').forEach(function(a){var h=a.getAttribute('href');if(!h||h.indexOf('mailto')===0)return;h=h.split('?')[0];a.setAttribute('href',e?h+'?lang=en':h)});}
 document.getElementById('lang').onclick=function(){en=!en;set(en);history.replaceState(null,'',location.pathname+(en?'?lang=en':''));};
 set(en);})();
 </script>
